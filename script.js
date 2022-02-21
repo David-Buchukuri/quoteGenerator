@@ -12,11 +12,19 @@ const quoteGenerator = () => {
       return res.json();
     })
     .then((res) => {
-      document.querySelector(".quote").textContent = res.quote;
-      document.querySelector(
-        ".character"
-      ).textContent = `Character: ${res.character}`;
-      document.querySelector(".anime").textContent = `From: ${res.anime}`;
+      if (res.quote) {
+        document.querySelector(".quote").textContent = res.quote;
+        document.querySelector(
+          ".character"
+        ).textContent = `Character: ${res.character}`;
+        document.querySelector(".anime").textContent = `From: ${res.anime}`;
+      } else {
+        throw new Error();
+      }
+    })
+    .catch(() => {
+      document.querySelector(".quote").textContent =
+        "Error occured, Try again later";
     });
 };
 
