@@ -1,11 +1,3 @@
-// let a = async () => {
-//   let r = await fetch("https://animechan.vercel.app/api/random")
-//   let parsed = await r.json();
-//   console.log(parsed);
-// };
-
-// a();
-
 const quoteGenerator = () => {
   fetch("https://animechan.vercel.app/api/random")
     .then((res) => {
