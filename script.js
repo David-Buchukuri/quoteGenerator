@@ -37,7 +37,7 @@ const quoteGenerator = () => {
         document.querySelector("button").textContent = "NEW QUOTE";
         document.querySelector("button").style.opacity = "1";
       });
-  }, 2000);
+  }, 1000);
 };
 
 document.querySelector(".button").addEventListener("click", quoteGenerator);

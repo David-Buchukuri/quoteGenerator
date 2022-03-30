@@ -48,7 +48,7 @@ p {
   padding: 0.7rem 2.5rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
-  transition: 0.9s;
+  transition: 0.5s;
 }
 
 .char-ani-wrapper {
@@ -66,5 +66,5 @@ p {
 }
 
 p {
-  transition: 1s;
+  transition: 0.5s;
 }
